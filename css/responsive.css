@@ -1,0 +1,373 @@
+/* resposive tablet */
+@media (max-width: 1000px ) {
+
+}
+/* ersponsive mobile */
+@media (max-width:670px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+    }
+    /* ================================= NAVBAR ====================== */
+    nav {
+        height: 104px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav .logo img {
+        width:40%;
+    }
+    header nav ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li {
+        display: flex;
+    }
+    header nav ul li a {
+        font-size: 14px;
+    }
+    /* ================================= HERO ====================== */
+    .hero {
+        height: 478px;
+        width: 100%;
+        background-position: none;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero h4 {
+        font-size: 16px;
+    }
+    /* ================================= WHO ARE YOU ====================== */
+    .who-are-you {
+        width: 100vw;
+        height: 335px;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 20px;
+        text-decoration: 3px underline;
+        text-decoration-color: #EC9A29;
+        text-underline-offset: 70%;
+        margin-bottom: 6%;
+    }
+    p {
+        font-size: 12px;
+    }
+    .who-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .who-img img {
+        width: 75%;
+        height: auto;
+        clip-path: inset(0 82px round 20px);
+    }
+    .txt {
+        margin: 5% 20%;
+        width: 100%;
+    }
+    .who-h3 {
+        text-decoration: 3px underline;
+        text-decoration-color: #EC9A29;
+        text-underline-offset: 70%;
+        margin-bottom: 6%;
+    }
+    .txt p {
+        line-height: 14.4px;
+    }
+    /* ================================= PRODUCT SHOWCASE ====================== */
+    .product {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .prod-txt {
+        margin-top: -2%;
+        margin-bottom: 10%;
+    }
+    .prod-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .prod-img img{
+        height: auto;
+        width: 40%;
+        clip-path: inset(46px 0 31px 0 round 20px);
+    }
+    button {
+        background-color: #A8201A;
+        border-radius: 55px;
+        padding: 8px 18px;
+        margin-top: 5%;
+        font-size: 10px;
+        color: white;
+    }
+    /* ================================= HANG OUT WITH US====================== */
+    .hang-out {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+    .hang-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hang-img img {
+        height: auto;
+        width: 65%;
+        clip-path: inset(0 60px round 20px);
+    }
+    /* ================================= FIND OUT AT INSTAGRAM ================ */
+    .find-us-instagram {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .find-us-instagram h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        margin: 0;
+    }
+    .find-us-instagram h3 span {
+        color: #EC9A29;
+        font-weight: 800;
+        font-size: 20px;
+        text-decoration: underline;
+        text-decoration-color: #EC9A29;
+        text-underline-offset: 10px;
+    }
+    h3 span .tanda-seru {
+        color: #0F8B8D;
+    }
+    .find-img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .find-img img {
+        width: 16%;
+        margin: 0 5% 5% 5%;
+    }
+    /* ================================= ASK US MORE ====================== */
+    .ask {
+        width: 100vw;
+        height: auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ask h3 {
+        margin: 0;
+        text-decoration: none;
+    }
+    .ask p {
+        line-height: 14.4px;
+        margin: 0 20%;
+    }
+    .ask button {
+        margin: auto 0;
+    }
+    /* ================================= FOOTER ====================== */
+    .footer-wrapper {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-foot {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo-foot .logo {
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .contact {
+        transform: scale(0.7);
+        filter: invert();
+    }
+    .footer-wrapper ul {
+        margin: 2% 0;
+        width: 100%;
+    }
+    .footer-wrapper ul li {
+        width: 100%;
+        line-height: 30px;
+    }
+    .footer-wrapper ul li a{
+        color: white;
+        margin-left: 20%;
+        font-size: 12px;
+    }
+    .footer-wrapper span {
+        color: #EC9A29;
+        margin-left: 10%;
+    }
+    footer p {
+        display: block;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        margin: 15% 0 5% 0;
+    }
+    /* ================================= MENU PAGE ============================================================================================== */
+    /* =========================================================== PRODUCT ====================== */
+    .nav-color {
+        height: 104px;
+        width: 100%;
+        background-color: #0F8B8D;
+        flex-direction: column;
+    }
+    .mnu-h3 {
+        margin: 30% 0 3% 0;
+        text-decoration: none;
+    }
+    .img-wrap {
+        width: 25%;
+        height: 25%;
+        margin: 3% 2% 0 2%;
+        border-radius: 5%;
+    }
+    .img-wrap p {
+        font-size: 12px;
+    }
+    /* ================================= DETAIL PAGE ====================== */
+    .mnu-detail {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        margin: 30% 0 5% 0;
+    }
+    .detail img {
+        width: 100%;
+    }
+    .dtl {
+        width: 100%;
+        margin: 8%;
+    }
+    .dtl h3 {
+        text-decoration: none;
+        margin: 0;
+    }
+    .dtl p {
+        width: 100%;
+        margin: 2% 0 2% 0;
+    }
+    .desc {
+        width: 60%;
+        margin: 0 8% 0 8%;
+    }
+    .desc-h3 {
+        text-decoration: none;
+        text-decoration-color: #EC9A29;
+        border-bottom: 2px solid #EC9A29;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+    .arrow {
+        width: 15%;
+        height: auto;
+    }
+    /* ================================= FIND US PAGE ====================== */
+    .mnu-find {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .mnu-find img {
+        border-radius: 5%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.7);
+        margin: 20% 0 0 0;
+    }
+    .mnu-find-address {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100vw;
+        margin: -10% 20% 5% 20%;
+    }
+    .mnu-find-address h3 {
+        margin-bottom: 5%;
+        text-decoration: none;
+    }
+    .address {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        border-radius: 1.5%;
+    }
+    .address h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+    .address p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    /* ================================= MESSAGE PAGE ====================== */
+    .mnu-message {
+        display: flex;
+        flex-direction: column;
+    }
+    .mnu-message h3 {
+        margin-top: 35%;
+    }
+    .mnu-message form {
+        height: auto;
+        width: 70%;
+        border-radius: 3%;
+    }
+    .form {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form input, textarea {
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2% 0;
+    }
+    .form label {
+        font-size: 12px;
+        margin: 0 0 3% 0;
+        width: 50%;
+    }
+    form button {
+        margin-left: 40%;
+        margin-bottom: 10%;
+    }
+    /* ================================= DETAIL PAGE ====================== */
+
+}

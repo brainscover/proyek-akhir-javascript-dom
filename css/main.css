@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* ================================= NAVBAR ====================== */
+nav {
+    height: 145px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    transition: all 0.5s;
+  justify-content: space-around;
+}
+.logo {
+    margin: 2% 5%;
+}
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+nav ul li a:hover, a:active {
+color: rgb(61, 61, 255);
+  transition: all 0.5s;
+  border-bottom: #ec9a29 2px solid;
+  padding-bottom: 5px;
+}
+
+a:is(:link, :active, :visited).aktiv {
+    border-bottom: #ec9a29 2px solid;
+  }
+/* ================================= HERO ====================== */
+.hero {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(rgba(20, 54, 66, 0.7), rgba(20, 54, 66, 0.7)), url(../assets/img/Coffe\ Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 100px;
+}
+.hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    animation-name: mymove;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+
+@keyframes mymove {
+    0% {
+      top: -500px;
+    }
+    100% {
+      color: #0f8b8d;
+      rotate: 360deg;
+      left: 0px;
+      top: 0px;
+    }
+  }
+.hero h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43.2px;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-name: mymove2;
+}
+
+@keyframes mymove2 {
+    0% {
+      right: -1000px;
+    }
+    100% {
+      color: #0f8b8d;
+      rotate: 360deg;
+      right: 0;
+    }
+  }
+
+/* ================================= WHO ARE YOU ====================== */
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+.who-txt {
+    width: 50%;
+    display: flex;
+    justify-content: initial;
+    flex-direction: column;
+}
+h3 {
+    color: #0F8B8D;
+    font-weight: 800;
+    font-size: 48px;
+}
+p {
+    font-size: 24px;
+    color: black;
+}
+.who-h3 {
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 20px;
+    margin-bottom: 40px;
+}
+.txt p {
+    line-height: 28.8px;
+}
+.who-img {
+    width: 50%;
+}
+.who-img img {
+    width: 690px;
+    height: 460px;
+    clip-path: inset(0 177px round 20px);
+    transition: all 0.8s;
+    cursor: pointer;
+    animation-name: mymove;
+}
+
+.who-img img:hover {
+    transform: scale(1.1);
+    rotate: 10deg;
+}
+/* ================================= PRODUCT SHOWCASE ====================== */
+.prod-txt {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 12%;
+}
+
+.prod-h3 {
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 20px;
+    margin-bottom: 40px;
+}
+
+.prod-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 9.5%;
+}
+.prod-img img{
+    height: auto;
+    width: 335px;
+    clip-path: inset(100px 0 68px 0 round 20px);
+    transition: all 0.8s;
+}
+
+.prod-img img:hover {
+    transform: scale(1.1);
+    rotate: 10deg;
+}
+
+button {
+    background-color: #A8201A;
+    border-radius: 55px;
+    padding: 20px 50px;
+    margin-top: 65px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+button a {
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+    color: #ec9a29;
+}
+/* ================================= HANG OUT WITH US====================== */
+.hang-out {
+    margin-bottom: 100px;
+}
+.hang-txt {
+    width: 50%;
+    margin-left: 8%;
+}
+
+.hang-h3 {
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 20px;
+    margin-bottom: 40px;
+}
+.hang-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+}
+.hang-img img {
+    width: auto;
+    height: 453px;
+    clip-path: inset(0 177px round 20px);
+    transition: all 0.8s;
+}
+
+.hang-img img:hover {
+    rotate: 10deg;
+    transform: scale(1.1);
+}
+/* ================================= FIND OUT AT INSTAGRAM ================ */
+.find-us-instagram {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.find-h3 {
+    display: flex;
+    justify-content: center;
+}
+.find-us-instagram h3 span {
+    color: #EC9A29;
+    font-weight: 800;
+    font-size: 48px;
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 10px;
+}
+.find-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.find-img img {
+    width: 15%;
+    margin: 50px 80px;
+    transition: all 0.8s;
+}
+
+.find-img img:hover {
+    transform: scale(1.1);
+    rotate: 10deg;
+}
+
+h3 span .tanda-seru {
+    color: #0F8B8D;
+}
+/* ================================= ASK US MORE ====================== */
+.ask {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 100px;
+}
+.ask button {
+    margin: auto 0;
+}
+/* ================================= FOOTER ====================== */
+.footer-wrapper {
+    height: 460px;
+    background-color: #143642;
+    display: flex;
+    font-size: 24px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 10%;
+}
+.footer-wrapper ul {
+    width: 20%;
+    margin: 2% 0;
+}
+.footer-wrapper ul li {
+    line-height: 50px;
+
+}
+.footer-wrapper ul li a{
+    color: white;
+}
+.footer-wrapper span {
+    color: #EC9A29;
+}
+.contact {
+    margin-top: 2%;
+    margin-left: 5%;
+    filter: invert();
+}
+footer p {
+    display: none;
+}
+/* ================================= MENU PAGE ============================================================================================== */
+/* =========================================================== PRODUCT ====================== */
+.nav-color {
+    background-color: #0F8B8D;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+.mnu-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.mnu-h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 245px;
+    margin-bottom: 40px;
+}
+.mnu-menu-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+.mnu-menu-img p {
+    color: white;
+    margin-top: 6%;
+}
+.img-wrap {
+    background-image: url(../assets/img/Coffee\ background.png);
+    width: 19%;
+    height: 20%;
+    margin: 3% 7% 0 7%;
+    border-radius: 10%;
+}
+.img-wrap:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.img-wrap:hover img {
+    transform: scale(1.1);
+    transform: translateY(-35%);
+    transition: all 0.3s ease-in-out;
+  }
+.img-wrap:hover p{
+    transform: translateY(900%);
+    transition: all 0.3s ease-in-out;
+}
+.img-wrap p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+/* ================================= DETAIL PAGE ====================== */
+.mnu-detail {
+    display: flex;
+    flex-direction: column;
+}
+.detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0 10% 10%;
+}
+.dtl {
+    width: 50%;
+    margin: 8%;
+}
+.dtl p {
+    margin: 30px 0 60px 0;
+}
+.desc {
+    margin: 0 10%;
+}
+.desc button {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.desc-h3 {
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 20px;
+    margin-bottom: 40px;
+}
+.arrow {
+    transform: scaleX(-1);
+    filter: invert();
+}
+.backto {
+    font-size: 25px;
+}
+/* ================================= FIND US PAGE ====================== */
+.mnu-find {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mnu-find-address {
+    display: flex;
+    flex-direction: column; 
+    width: 40%;
+    margin-top: 18%;
+}
+.mnu-find-address h3 {
+    margin-bottom: 5%;
+}
+.address {
+    width: 80%;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+}
+.address h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.address p {
+    font-size: 20px;
+    line-height: 35px;
+}
+.mnu-find img {
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    margin: 52% 1% 0 15%;
+}
+/* ================================= MESSAGE PAGE ====================== */
+.mnu-message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mnu-message h3 {
+    margin-top: 18%;
+}
+.mnu-message form {
+    height: 100%;
+    width: 50%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+}
+.form {
+    margin: 5%;
+    display: flex;
+}
+.form input, textarea {
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+    resize: none;
+    width: 100%;
+    text-indent: 10px;
+}
+.form label {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 3%;
+    width: 50%;
+}
+form button {
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+/* ================================= DETAIL PAGE ====================== */

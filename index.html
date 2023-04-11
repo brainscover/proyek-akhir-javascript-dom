@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./js/main.js"></script>
+    <title>Aroma Bumi</title>
+</head>
+<body>
+    <header>
+        <!-- ========== NAVBAR ====================== -->
+        <nav id="navbar" class="nav">
+            <div class="logo" onclick="window.location.href='./index.html'">
+                <img src="./assets/img/Logo White.png" alt="aroma bumi">
+            </div>
+            <ul>
+                <li><a href="./menu.html">Product</a></li>
+                <li><a href="./find_us.html">Store</a></li>
+                <li><a href="./message.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ========== HERO ====================== -->
+        <div class="hero">
+            <h1>Fresh Brewed
+                <br>Coffe & Tea
+            </h1>
+            <h4>Best qualities from our local soil</h4>
+        </div>
+        <!-- ========== WHO ARE YOU ====================== -->
+        <div data-aos="zoom-in" data-aos-duration="2000" class="who-are-you flex">
+            <div class="who-img">
+                <img src="./assets/img/Who are we.jpg" alt="Who are we?">
+            </div>
+            <div class="who-txt txt">
+                <h3 class="who-h3">Who are we?</h3>
+                <p>We are Jakarta-based coffee and tea house
+                    <br>focused on professionally brewing local
+                    <br>sourced, high quality, coffee beans and
+                    <br>tea leaves.
+                </p>
+            </div>
+        </div>
+        <!-- ========== PRODUCT ====================== -->
+        <div data-aos="zoom-in" data-aos-duration="2000" class="product flex">
+            <div class="prod-txt txt">
+                <h3 class="prod-h3">Product Showcase</h3>
+                <p>Our products contain the highest quality
+                    <br>ingredients processed with care.
+                </p>
+                <button onclick="window.location.href='./menu.html'">
+                    See our coffee and tea
+                </button>
+            </div>
+            <div class="prod-img">
+                <img src="./assets/img/Our products.jpg" alt="Product Showcase">
+            </div>
+        </div>
+        
+        <!-- ========== HANG OUT ====================== -->
+        <div data-aos="zoom-in" data-aos-duration="2000" class="hang-out flex">
+            <div class="hang-img">
+                <img src="./assets/img/Hang out with us.jpg" alt="Hang out with us!">
+            </div>
+            <div class="hang-txt txt">
+                <h3 class="hang-h3">Hang out with us!</h3>
+                <p>Our stores use sustainable  furnitures,
+                    <br>surrounded by nature, to help our
+                    <br>planet survive.
+                </p>
+                <button onclick="window.location.href='./find_us.html'">
+                    Find our cafes
+                </button>
+            </div>
+        </div>
+        <!-- ========== FIND US INSTAGRAM ====================== -->
+        <div class="find-us-instagram">
+            <div>
+                <h3 class="find-h3">Find us out at Instagram<span>@aroma_bumi <span class="tanda-seru">!</span></span></h3>
+            </div>
+            <div class="find-img">
+                <img src="./assets/img/Feed 1.png" alt="Feed 1" data-aos="flip-right" data-aos-duration="3000" >
+                <img src="./assets/img/Feed 2.png" alt="Feed 2" data-aos="flip-right" data-aos-duration="3000" >
+                <img src="./assets/img/Feed 3.png" alt="Feed 3" data-aos="flip-right" data-aos-duration="3000" >
+                <img src="./assets/img/Feed 4.png" alt="Feed 4" data-aos="flip-right" data-aos-duration="3000" >
+                <img src="./assets/img/Feed 5.png" alt="Feed 5" data-aos="flip-right" data-aos-duration="3000" >
+                <img src="./assets/img/Feed 6.png" alt="Feed 6" data-aos="flip-right" data-aos-duration="3000" >
+            </div>
+        </div>
+        <!-- ========== ASK US MORE ====================== -->
+        <div class="ask">
+            <div>
+                <h3 class="ask-h3">Ask us more!</h3>
+            </div>
+            <div>
+                <p>If you have any questions or interested to cooperate with us, kindly let us know here:</p>
+            </div>
+            <button onclick="window.location.href='./message.html'">
+                Contact us
+            </button>
+        </div>
+    </main>
+        <!-- ========== FOOTER ====================== -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="logo-foot">
+                <img class="logo" src="./assets/img/Logo White.png" alt="aroma bumi" onclick="window.location.href='./index.html'">
+                <img class="contact" src="./assets/img/MAIL ICON.svg" alt="mail">
+                <img class="contact" src="./assets/img/PHONE ICON.svg" alt="phone">
+            </div>
+            <ul>
+                <li><a href="./menu.html" class="accordion"><span>Products</span></a></li>
+                <li><a href="#">Coffee Based</a></li>
+                <li><a href="#">Non-Coffee</a></li>
+                <li><a href="#">Tea Based</a></li>
+            </ul>
+            <ul>
+                <li><a href="./find_us.html" class="accordion"><span>Store</span></a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+            <ul>
+                <li><a href="./message.html" class="accordion"><span>Contact</span></a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+            <p>2023 © Designed by Progate Indonesia</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 2000, once: true });
+    </script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+</body>
+</html>
